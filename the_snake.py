@@ -4,8 +4,8 @@
 Содержит классы для игровых объектов и основную логику игры.
 """
 
-from random import choice, randint
 from itertools import product
+from random import choice, randint
 
 import pygame
 
@@ -171,8 +171,8 @@ def show_message(message):
     """Отображает сообщение на экране."""
     font_1 = pygame.font.Font(None, 36)
     text_1 = font_1.render(message, True, (255, 255, 255))
-    font_2 = pygame.font.SysFont("arial", 18, italic=True)
-    text_2 = font_2.render(f"СЧЁТ: {counter}", True, (255, 255, 255))
+    font_2 = pygame.font.SysFont('arial', 18, italic=True)
+    text_2 = font_2.render(f'СЧЁТ: {counter}', True, (255, 255, 255))
     text_rect_1 = text_1.get_rect(
         center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 15)
     )
@@ -236,7 +236,7 @@ def main():
             pygame.display.update()
             clock.tick(SPEED)
         else:
-            show_message("GAME OVER")
+            show_message('GAME OVER')
 
 
 if __name__ == '__main__':
