@@ -149,7 +149,6 @@ class Apple(GameObject):
 
 def handle_keys(game_object, game_over):
     """Обрабатывает нажатия клавиш пользователем."""
-    global counter
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
@@ -193,12 +192,8 @@ def show_message(message):
 
 
 def main():
-<<<<<<< HEAD
     """Основная функция игры, содержащая главный игровой цикл."""
     global counter
-=======
-    # Инициализация PyGame:
->>>>>>> fb2f06cd0e032d0064921cd364789a6d8c1d0558
     pygame.init()
     # Тут нужно создать экземпляры классов.
     snake = Snake()
